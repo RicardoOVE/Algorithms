@@ -14,3 +14,4 @@ def palindromo(word):
 
 print(f"Palabra: oso Resultado: {palindromo('oso')}")
 print(f"Palabra: casa Resultado: {palindromo('casa')}")
+print(f"Palabra: anilina  Resultado: {palindromo('anilina')}")
