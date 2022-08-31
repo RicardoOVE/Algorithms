@@ -1,15 +1,15 @@
 from Nodo import Nodo
 class ListaEncadenada:
     def __init__(self):
-        self.head = None #Porque cuando declaro por primera vez mi lista AÚN no tiene ningún nodo, la inicializamos vacía
+        self.head = None
 
     def insertaNodo(self, nuevoNodo):
-        if self.head == None: #Mi lista está vacía
-            self.head = nuevoNodo #El primer elemento lista es el nodo recibo
+        if self.head == None: 
+            self.head = nuevoNodo
         else:
-            aux = self.head #el primer nodo a comparar es el head (o el primero de mi lista)
-            while aux.next != None: #Siempre y cuando el next de mi nodo NO sea None
-                aux = aux.next #aux ahora es el siguiente nodo
+            aux = self.head 
+            while aux.next != None:
+                aux = aux.next
             aux.next = nuevoNodo
 
     def imprimeLista(self):
