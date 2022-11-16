@@ -75,3 +75,13 @@ function maximo_comun_divisor(n1, n2){
     }
 }
 
+function mcd_recursivo(n1, n2){
+    let residuo = n1 % n2;
+    if(residuo === 0 ){
+        return n2
+    } else {
+        n1 = n2;
+        n2 = residuo;
+        return mcd_recursivo(n1, n2);
+    }
+}
